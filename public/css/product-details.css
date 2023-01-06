@@ -1,0 +1,125 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+.login
+{
+    background: radial-gradient(rgb(254, 254, 254),#f9aaaa);
+    background-size: 100%;
+}
+#login-form
+{
+    display: flex;
+}
+.form-box
+{
+    width: 370px;
+    height: 760px;
+    position: relative;
+    margin: 1.5% auto;
+    background-image: linear-gradient(to top,#d5a1d5 0%,#c7e5e8 100%);
+    padding: 10px;
+    overflow: hidden;
+}
+.button-box
+{
+    height: 500px;
+    width: 220px;
+    margin: 40px auto;
+    position: relative;
+}
+
+h1{
+    padding: 5px 0;
+    font-weight: normal;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 27px;
+
+}
+::placeholder
+{
+    font-weight: s;
+    color: #3f1485;
+}
+select,input[type="text"],input[type="email"],input[type="number"]{
+    top: 80px;
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border-left: 0;
+    border-top: 0;
+    border-right: 0;
+    border-bottom: 1px solid #7c7881;
+    outline: none;
+    background: transparent;
+    color: #3f1485;
+    font-size: 15px;
+    text-align: center;
+}
+.color{
+    text-align: center;
+}
+input[type="file"]{top: 80px;
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border-left: 0;
+    border-top: 0;
+    border-right: 0;
+    outline: none;
+    background-color: #7b31f1;
+    color: #2f0670;
+    font-size: 15px;
+    text-align: center;}
+.input-group-login p{
+    margin-top: 10px;
+    padding: 20px 0;
+    font-size: 20px;
+    width: 280px;
+}
+.input-field
+{
+    width: 100%;
+    padding: 5px 0;
+    margin: 5px 0;
+    border-left: 0;
+    border-top: 0;
+    border-right: 0;
+    border-bottom: 1px solid #3f1485;
+    outline: none;
+    background: transparent;
+    color: #000000;
+    font-size: 15px;
+}
+h3
+{
+    width: 100%;
+    padding: 5px 3px;
+    margin: 5px 2px;
+    border-left: 0;
+    border-top: 0;
+    border-right: 0;
+    /* border-bottom: 1px solid #3f1485; */
+    outline: none;
+    background: transparent;
+    color: #000000;
+    font-size: 15px;
+}
+.submit-btn
+{
+    width: 70%;
+    margin: 20px 40px;
+    padding: 0px 8px;
+    cursor: pointer;
+    display: block;
+    text-decoration: none;
+    font-size: 20px;
+    background: #e8a5a5;
+    color: #3f1485;
+    border-radius: 20px;
+}
+

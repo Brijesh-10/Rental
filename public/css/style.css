@@ -1,0 +1,222 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+.full-page
+{
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(to top,#d9afd9 0%,#97d9e1 100%);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: absolute;
+}
+.navbar
+{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    padding-left: 50px;
+    padding-right: 30px;
+    padding-top: 50px;
+}
+nav ul
+{
+    display: inline-block;
+    list-style: none;
+}
+nav ul li
+{
+    display: inline-block;
+    margin-right: 70px;
+}
+nav ul li a
+{
+    text-decoration: none;
+    font-size: 20px;
+    color: #3f1485;
+    outline: none;
+    border: none;
+    background-image: linear-gradient(to top,#d9afd9 0%,#97d9e1 100%);
+    font-family: sans-serif;
+}
+nav ul li button
+{
+    text-decoration: none;
+    font-size: 20px;
+    color: #3f1485;
+    outline: none;
+    border: none;
+    background-image: linear-gradient(to top,#d9afd9 0%,#97d9e1 100%);
+    cursor: pointer;
+    font-family: sans-serif;
+}
+a{
+    text-decoration: none;
+    color: #3f1485;
+    font-size: 28px;
+}
+.login,.logup,body
+{
+    background: radial-gradient(rgb(254, 254, 254),#f9aaaa);
+    background-size: 100%;
+}
+#login-form,#sign-up,#forgot-form
+{
+    display: flex;
+}
+.form-box,.signup-box,.frgt-box
+{
+    width: 370px;
+    height: 500px;
+    position: relative;
+    margin: 1.5% auto;
+    background-image: linear-gradient(to top,#d5a1d5 0%,#c7e5e8 100%);
+    /*background-color: rgb(255, 203, 230);*/
+    padding: 10px;
+    overflow: hidden;
+}
+.button-box,.register-box,.forgot-box
+{
+    height: 500px;
+    width: 220px;
+    margin: 40px auto;
+    position: relative;
+}
+label
+{
+    left: 60;
+    position: absolute;
+    width: 130px;
+    height: 100%;
+    color: #3f1485;
+    font-size: 30px; 
+}
+.input-group-login,.input-group-register,.input-group-forgot
+{
+    top: 90px;
+    padding: 10px;
+    position: absolute;
+    width: 280px;
+    color: #3f1485;
+    font-size: 17px;
+}
+::placeholder
+{
+    color: #3f1485;
+}
+.input-group-login p{
+    margin-top: 10px;
+    padding: 20px 0;
+    font-size: 20px;
+    width: 280px;
+}
+.input-field, .output-fld, .frgt-fld
+{
+    width: 100%;
+    padding: 5px 0;
+    margin: 5px 0;
+    border-left: 0;
+    border-top: 0;
+    border-right: 0;
+    border-bottom: 1px solid #3f1485;
+    outline: none;
+    background: transparent;
+    color: #000000;
+    font-size: 15px;
+}
+h3
+{
+    width: 100%;
+    padding: 5px 3px;
+    margin: 5px 2px;
+    border-left: 0;
+    border-top: 0;
+    border-right: 0;
+    /* border-bottom: 1px solid #3f1485; */
+    outline: none;
+    background: transparent;
+    color: #000000;
+    font-size: 15px;
+}
+.output-fid{
+    padding: 0 3px; 
+    margin: 0 6px;
+}
+.submit-btn,.sign-btn
+{
+    width: 70%;
+    margin: 20px 12px;
+    padding: 5px 10px;
+    cursor: pointer;
+    display: block;
+    text-decoration: none;
+    font-size: 20px;
+    background: #e8a5a5;
+    color: #3f1485;
+    border-radius: 20px;
+}
+.for-signup
+{
+    font-size: 20px;
+    width: 200px; 
+}
+.frgt-btn
+{
+    width: 70%;
+    margin: 0px 12px;
+    padding: 5px 10px;
+    cursor: pointer;
+    display: block;
+    text-decoration: none;
+    font-size: 20px;
+    background: #e45bcf;
+    color: #3f1485;
+    border-radius: 20px;
+}
+.for-pwd
+{
+    padding: 1px ;
+    font-size: 18px;
+}
+.contain
+{
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+}
+#capt
+{
+    width: 130px;
+    height: 47px;
+    font-size: 35px;
+    background-color: #e276e2;
+    border: none;
+    letter-spacing: 1px;
+    float: left;
+    color: bisque;
+}
+#refresh
+{
+    float: left;
+    height: 82px;
+    border-radius: 0 10px 10px 0;
+}
+#refresh img
+{
+    margin-right: 36px;
+    cursor: pointer;
+}
+/** contact **/
+.contact
+{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}

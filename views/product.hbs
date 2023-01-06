@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+   <!-- font awesome cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+   <!-- custom css file link  -->
+   <link rel="stylesheet" href="./css/product.css">
+
+   <!-- custom js file link  -->
+   <!-- <script src="cart_script.js" defer></script> -->
+
+</head>
+<body>
+<div class="products-preview">
+   
+   <div class="preview" data-target="p-1">{{#each x}}
+      <img src="./pic/upload/{{this.img}}" alt="">
+      <h3>{{this.pname}} </h3>
+      <div class="stars">
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star-half-alt"></i>
+         <span>Rs {{this.rent}} per day</span>
+      </div>
+      <p>Product Id:{{this.pid}} {{this.company}} Product:{{this.pname}} {{this.model}} {{this.power}} {{this.dimension}}</p>
+      <div class="price" name="price" value="{{this.rdays}}">Availabe for {{this.rdays}} day</div>
+      <button class="buttons">
+         <a href="day" class="cart">Number Of Days</a>
+      </button> {{/each}}
+   </div>
+  
+</div>
+
+</body>
+</html>

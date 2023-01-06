@@ -1,0 +1,28 @@
+<html lang="en">
+     <head><script src="./js/p.js">
+    </script>
+    <script src="./js/chk-phn.js">
+    </script>
+   </script>
+    <link rel="stylesheet" href="./css/style.css">
+    </head>
+    <body class="logup">
+            <div id="signup-form" class="signup-page">
+                <div class="signup-box">
+                    <div class="register-box">
+                        <label>Sign up</label>
+                        <form id="register" class="input-group-register" action="/sign_up" method="post">
+                            <input type="text" class="output-fld"  name="fname" placeholder="First Name" required>
+                            <input type="text" class="output-fld"  name="lname" placeholder="Last Name" required>
+                            <input type="email" class="output-fld" id="email_id" name="email" placeholder="Email Id" required>
+                            <input type="number" class="output-fld" id="mobile_no" name="mno" onblur="chkphn()" placeholder="Enter phn no" required>
+                            <input type="password" class="output-fld"  id="pwd1" placeholder="Enter Password" required>
+                            <input type="password" class="output-fld"  name="pwd"  id="pwd2" onblur="pwd()"placeholder="Confirm Password" required>
+                            <h3>Please fill all the fields</h3> 
+                            <button type="submit" class="sign-btn" required>Register</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+    </body>
+</html>

@@ -1,0 +1,40 @@
+<html lang="en">
+    <head>   
+       <script src="./js/pr.js"></script> 
+       <script src="./js/capt.js"></script> 
+	<link rel="stylesheet" href="./css/style.css">
+    </head>
+	
+    <body>
+        <div id="forgot-form" class="forpwd">
+            <div class="frgt-box">
+                <div class="forgot-box">
+                    <label>Reset Password</label>
+                    <form id="frgt" class="input-group-forgot" action="/forgot_pwd" method="post">
+                        <input type="email" class="frgt-fld" id="email_id"  name="email_id" placeholder="Email Id" required>
+                        <input type="password" class="frgt-fld"  id="rpwd1" placeholder="Enter New Password" required>
+                        <input type="password" class="frgt-fld"  name="fpwd" id="rpwd2" onblur="pwd()" placeholder="Enter Confirm Password" required>
+                        <input type="text"  id="rcapt" class="frgt-fld" placeholder="Enter the captcha" onkeyup="capt()" required>   
+                        <div class="contain">
+                            <p id="capt">
+                            <div id="refresh"><img src="./pic/refresh img.jpeg" width="50px" onclick="capcha()"></div>     
+                        </div>
+                        <button type="submit" class="frgt-btn">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div> 
+        <script>
+            function capcha()
+            {
+                var ch=['A','B','C','D','E','F','1','2','3','8','9']
+                var result=''
+                for(var i=0;i<5;i++)
+                {
+                    result+=ch[Math.floor(Math.random()*11)]
+                }
+                document.getElementById("capt").innerHTML=result;
+            }capcha();
+        </script> 
+    </body>
+</html>

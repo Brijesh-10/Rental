@@ -1,0 +1,40 @@
+<html lang="en">
+    <head>
+    <link rel="stylesheet" href="./css/product-details.css">
+    </head>
+    <body class="login">
+        <div id="login-form" class="login-page">
+            <div class="form-box">
+                <div class="button-box">
+                    <h1>Product Details</h1>
+                   
+                    <form id="login" class="input-group-login" enctype="multipart/form-data" action="/Product-details" method="post">
+                        <input type="email" class="input-field"  name="email" placeholder="Enter your registered email" required>
+                        <select name="select"  placeholder="Product Name" required>
+                            <option disabled selected>Select Product</option>
+                            <option value="Smart-Tv">
+                                Smart Tv
+                            </option>
+                            <option value="Speaker">
+                                Speaker
+                            </option>
+                            <option value="Air-Conditioner">
+                                Air-Conditioner
+                            </option>
+                        </select>
+                        <input type="text" class="input-field"  name="company" placeholder="Company" required>
+                        <div class="color"><h3>Choose Colour</h3><input type="color" class="color"  id="color" name="color" placeholder="Colour" required></div>
+						<input type="text" class="input-field" name="power" placeholder="Power In">
+						<input type="text" class="input-field" name="dimension" placeholder="Dimentions">
+                        <input type="text" class="input-field" name="model" placeholder="Model" required>
+						<input type="text" class="input-field" name="description" placeholder="Description" required>
+						<input type="number" class="input-field" name="rent" placeholder="Rent Price" required>
+                        <input type="number" class="input-field" name="rday" placeholder="No of Days" required>
+						<input type="file" id="fileupload" name="pic" accept="image/*" required/>
+                        <button type="submit" class="submit-btn">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

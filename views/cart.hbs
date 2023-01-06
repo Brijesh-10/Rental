@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<h1>	<title> Cart </title></h1>>
+	<link rel="stylesheet" type="text/css" href="./css/cart.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,900" rel="stylesheet">
+</head>
+<body>
+   <div class="CartContainer">
+   	   <div class="Header">
+   	   	<h1 class="Heading">Cart</h1>
+   	   </div>
+	{{#each x}}
+   	   <div class="Cart-Items">
+   	   	  <div class="image-box">
+   	   	  	<img src="./pic/upload/{{this.img}}"/>
+   	   	  </div>
+   	   	  <div class="about">
+   	   	  	<I><h3 class="title">{{this.pname}}</h3></I>
+					
+					<div class="mob"><h1 class="title">Lender UserID:</h1>
+					<h2><I>{{this.email}}</I></h2></div>
+					<div class="mob"><h1 class="title">Available For:</h1>
+					<h2><I>{{this.day}}</I></h2></div>
+   	   	  </div>
+   	   	  <div class="prices">
+   	   	  	<div class="amount">Rs {{this.rent}}</div><form method="post" action="/cart">
+   	   	  	<button name="save" value="" class="save">Buy Now</button>
+   	   	  	<button name="remove" value="{{this.pid}}" class="remove">Remove</button>
+   	   	  </div></form>
+   	   </div>
+	{{/each}}
+   </div> 
+</body>
+</html>

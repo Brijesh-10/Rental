@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+         <meta charset="UTF8">
+         <link rel="stylesheet" href="./css/index.css">
+         <link rel="preconnect" href="https://fonts.googleapis.com">
+         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    </head>
+<body>
+    <form action="/" method="post">
+    <div class="h-header">
+        <div class="h-container">
+            <div class ="h-navbar">
+                <div class="logo">
+                    <img src="#logo" width="125px">
+                </div>
+                <nav>
+                    <ul>
+                        {{#unless tips}}
+                        <li><button><a href="sign_up">Register</a></button></li>
+                        <li><button><a href="sign_in">Sign in </a></button></li>{{/unless}}
+                        <li><button><a href="cart">Cart</a></button></button></li>
+                        <li><button><a href="./html/about.html">About Us </a></button></li>
+                    </ul>
+                </nav>
+                <img src="./pic/proicon.png"  class="profiles" width="27px"></a>
+            </div>
+            <div class="h-row">
+                <div class="h-col-2">
+                    <h1>LIVE LIKE YOU WANT</h1>
+                    <h2>The Lifestyle You Deserve:<br></h2>
+                    <br><p>Everything You Need . All Right Here Modern Amenities , Urban Location , Sophisticated Style Bridging the gap between convenience and luxury . A Higher Quality of Living Dream Big , Live Well.</p>
+                    <a href="/product-details" class="btn"> Add Items &#8594;</a>
+                </div>
+                    <div class="h-col-2" align="right"><img src="./pic/hadd.jpeg"></div>
+            </div> 
+        </div>
+    </div>   
+     <categories--------></categories--------> 
+     
+        <div class="h-categories" >
+            <div class="h-small-container">
+                <h2 class="Ac">AIR-CONDITIONER</h2>
+                <div class="h-row">{{#each x}}
+                    <div class="h-col4">
+                        <img src="./pic/upload/{{this.img}}">
+                       <button name="pd" value="{{this.pid}}">{{this.pname}}</button>
+                        <p>Rs{{this.rent}}/day</p>
+                    </div>{{/each}}
+                </div>
+                <h2 class="camera">Speaker</h2>
+                <div class="h-row">{{#each z}}
+                    <div class="h-col4">
+                        <img src="./pic/upload/{{this.img}}">
+                        <button name="pd" value="{{this.pid}}">{{this.pname}}</button>
+                        <p>Rs{{this.rent}}/day</p>
+                    </div>{{/each}}
+                </div>
+                <h2 class="tv">SMART-TV</h2>
+                <div class="h-row">{{#each y}}
+                    <div class="h-col4">
+                        <img src="./pic/upload/{{this.img}}">
+                       <button name="pd" value="{{this.pid}}">{{this.pname}}</button>
+                        <p>Rs{{this.rent}}/day</p>
+                    </div>{{/each}}
+                </div>
+            </div>
+        </div>
+        </form>
+    <!--profile page-->
+    <div class="popup-overlay">
+    <div class="profile-box">
+        <div class="popup-close-btn">&times;</div>
+        <img src="./pic/proicon.png" class="profile-pic">
+        <img src="#img1" class="setting-icon">{{#unless z}}
+        <h2>{{this.fname}} {{this.lname}}</h2>
+        <div class="pro-details">
+            <div class="details"><p>{{this.email}}</p><p>{{this.mno}}</p></div>{{/unless}} 
+            <div class="details-name"><h3>email-id:</h3><h3>Mobile-no:</h3><h3>Yours Order:</h3></div>   
+        
+       </div>
+    </div>
+    <script src="./js/profile.js"></script>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 90vh;
+        }
+        .phn{
+            height: 70%;
+            width: 50%;
+            display: flex;
+            margin: auto;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(to bottom, #f3a281, #FAFCFF);
+        }
+        a{
+            padding-left: 15px;
+        } 
+        input{margin: 12px 20rem;
+            background-color: transparent;
+            outline: none;
+             border-left: 0;
+             border-top: 0;
+            border-right: 0;
+            border-bottom: 2px solid rgb(134, 13, 0);
+            text-align: center;
+        }
+        ::placeholder{
+            color: blue;
+            font-size: 1.2rem;
+            padding: 0px 8s px;
+        }
+        button{
+            width: 30%;
+            margin: 20px 270px;
+            padding: 5px 8px;
+            cursor: pointer;
+            display: block;
+            text-decoration: none;
+            font-size: 20px;
+            background: #e8a5a5;
+            color: #3f1485;
+             border-radius: 20px;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="phn"><form method="post" action="/day">
+        <label><h1>Please enter  within the given number no of days, you want to rent.</h1><input name="select" type="number" placeholder="Enter No Of Days->" required><br><button>Add To Cart</button>
+        </label>
+        </form>
+    </div>
+</body>
+</html>
